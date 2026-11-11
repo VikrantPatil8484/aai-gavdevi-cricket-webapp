@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap');
+
+* {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Transparent Glass Card over Cricket Stadium Background */
+.nm-card {
+  background: linear-gradient(135deg, rgba(6, 22, 46, 0.58) 0%, rgba(7, 38, 29, 0.52) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.nm-card-gold {
+  background: linear-gradient(135deg, rgba(8, 28, 56, 0.62) 0%, rgba(10, 46, 34, 0.58) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.55);
+  border: 1.5px solid rgba(231, 201, 122, 0.65);
+}
+
+/* Clean Transparent Glass Input / Well */
+.nm-inset {
+  background: rgba(4, 15, 30, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(231, 201, 122, 0.28);
+  box-shadow: none;
+}
+
+.nm-inset:focus {
+  background: rgba(6, 22, 44, 0.75);
+  border-color: rgba(231, 201, 122, 0.9);
+  box-shadow: 0 0 12px rgba(231, 201, 122, 0.25);
+}
+
+/* ISPL MVP Style Slanted Parallelogram Box (Transparent Glass - Fixed, No Zoom/Pop-up) */
+.slanted-box {
+  transform: skewX(-12deg);
+  border-radius: 14px;
+  border: 1.5px solid rgba(231, 201, 122, 0.6);
+  background: linear-gradient(135deg, rgba(8, 28, 58, 0.58), rgba(6, 36, 26, 0.55));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.slanted-box-active {
+  border: 2px solid #fde68a;
+  background: linear-gradient(135deg, rgba(20, 56, 102, 0.78), rgba(13, 64, 46, 0.75));
+  box-shadow: 0 0 22px rgba(243, 216, 140, 0.42);
+}
+
+.unskew-content {
+  transform: skewX(12deg);
+}
+
+/* "Register Now >" Reference Button Style (Transparent Broadcast Navy + Gold Border) */
+.reg-btn {
+  background: rgba(9, 24, 48, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid #e7c97a;
+  border-radius: 10px;
+  color: #f3d88c;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transition: all 0.22s ease;
+}
+
+.reg-btn:hover {
+  background: rgba(16, 40, 76, 0.88);
+  border-color: #fde68a;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(231, 201, 122, 0.4);
+  transform: translateY(-1px);
+}
+
+.reg-btn-active {
+  background: linear-gradient(135deg, rgba(24, 58, 108, 0.92), rgba(14, 62, 46, 0.9));
+  border: 2px solid #fde68a;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(231, 201, 122, 0.48);
+}
